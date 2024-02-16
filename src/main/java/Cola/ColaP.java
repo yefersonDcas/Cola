@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Cola;
 
 import java.util.LinkedList;
@@ -26,7 +23,17 @@ public class ColaP<T extends Base> {
         return elementos.removeFirst();
     }
     
-    public  boolean estaVacia(){
+    public boolean estaVacia(){
         return elementos.isEmpty();
     }
+
+    @Override
+    public String toString() {
+        String cad="[";
+        for (T e: elementos){
+            cad+= " "+ e.toString();
+        }
+        return cad+"]";
+    }
+    
 }
