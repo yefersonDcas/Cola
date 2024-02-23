@@ -8,9 +8,8 @@ import Cola.Base;
  */
 public class Personas extends Base {
 
-       private String nombrePersona;
+    private String nombrePersona;
     private String correoPersona;
- 
 
     public Personas() {
     }
@@ -18,8 +17,9 @@ public class Personas extends Base {
     public Personas(String nombrePersona, String correoPersona) {
         this.nombrePersona = nombrePersona;
         this.correoPersona = correoPersona;
-        
+
     }
+
     /**
      * Get the value of nombrePersona
      *
@@ -61,8 +61,6 @@ public class Personas extends Base {
         return "Personas{" + "nombrePersona=" + nombrePersona + ", correoPersona=" + correoPersona + '}';
     }
 
-    
-    
     @Override
     public Base copy() {
         return new Personas(nombrePersona, correoPersona);
